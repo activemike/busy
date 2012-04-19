@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require_tree .
+ *= require _reset
  *= require _default
  *= require home
 */
