@@ -54,6 +54,7 @@ img::-moz-selection  {background: transparent;}
 body {-webkit-tap-highlight-color: rgb(255,255,158);}
 
 
+body{background-color:#999!important;}
 
 /*    Default Layout: 992px. 
     Gutters: 24px.
@@ -63,14 +64,16 @@ body {-webkit-tap-highlight-color: rgb(255,255,158);}
 cols    1     2      3      4      5      6      7      8      9      10
 px      68    160    252    344    436    528    620    712    804    896    */
 
-#container {
-  width: 896px;
-  padding: 72px 48px 84px;
+#wrapper {
+  width: 944px;
+  padding: 32px 24px;
   background: rgb(232,232,232);
   color: rgb(60,60,60);
   margin: 0 auto!important;
   -webkit-text-size-adjust: 100%;
 }
+
+#container{background-color:#fff;padding:20px;min-height:90%;}
 
 
 
@@ -84,10 +87,12 @@ px      68    160    252    344    436    528    620    712    */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   
-  #container {
+  #wrapper {
     width: 712px;
     padding: 48px 28px 60px;
   }
+  
+  #container{}
 }
 
 
@@ -102,7 +107,7 @@ px      68    160    252    */
 
 @media only screen and (max-width: 767px) {
   
-  #container {
+  #wrapper {
     width: 252px;
     padding: 48px 34px 60px;
   }
@@ -121,7 +126,7 @@ px      68    160    252    344    436    */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   
-  #container {
+  #wrapper {
     width: 436px;
     padding: 36px 22px 48px;
   }
@@ -138,7 +143,7 @@ px      68    160    252    344    436    */
   only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-device-pixel-ratio: 2) {
   
-  #container {
+  #wrapper {
   
   }
   
