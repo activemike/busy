@@ -19,6 +19,8 @@ html,body{height:100%;}
   font-size: 38px;
   line-height: 42px;
   letter-spacing: -1px;
+  font-weight:700;
+  color:#222;
 }
 
 .large, h2 {
@@ -36,8 +38,9 @@ html,body{height:100%;}
   line-height: 30px;
 }
 
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
 body {
-  font: 18px/24px "Times New Roman", Times, serif;
+  font: 18px/24px "Oxygen", Times, serif;background-color:#999!important;
 }
 
 .small, small {
@@ -54,7 +57,6 @@ img::-moz-selection  {background: transparent;}
 body {-webkit-tap-highlight-color: rgb(255,255,158);}
 
 
-body{background-color:#999!important;}
 
 /*    Default Layout: 992px. 
     Gutters: 24px.
