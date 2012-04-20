@@ -1,4 +1,6 @@
 Busy::Application.routes.draw do
+  resources :updates
+
   resources :activities
 
   resources :tasks

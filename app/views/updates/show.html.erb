@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @update.name %>
+</p>
+
+<p>
+  <b>Action:</b>
+  <%= @update.action %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @update.date %>
+</p>
+
+<p>
+  <b>Private:</b>
+  <%= @update.private %>
+</p>
+
+<p>
+  <b>Link:</b>
+  <%= @update.link %>
+</p>
+
+
+<%= link_to 'Edit', edit_update_path(@update) %> |
+<%= link_to 'Back', updates_path %>
