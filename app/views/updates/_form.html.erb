@@ -11,27 +11,11 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+  <div class="mt40">Someone named <%= f.text_field :name, :id => "name", :placeholder => "Jesus" %> just <%= f.text_field :action, :id => "action", :placeholder => "signed up for" %> <%= f.text_field :item, :id => "item", :placeholder => "the Walk On Water 5k" %> (you can see more details about it at this url: <%= f.text_field :link, :id => "link", :placeholder => "www.heaven.com" %>) on <%= f.date_select :date, :id => "date", :placeholder => "03/30/2012" %>.  
   </div>
-  <div class="field">
-    <%= f.label :action %><br />
-    <%= f.text_field :action %>
-  </div>
-  <div class="field">
-    <%= f.label :date %><br />
-    <%= f.text_field :date %>
-  </div>
-  <div class="field">
-    <%= f.label :private %><br />
-    <%= f.check_box :private %>
-  </div>
-  <div class="field">
-    <%= f.label :link %><br />
-    <%= f.text_field :link %>
-  </div>
+  <div id="private">If this should be kept private, check this box: <%= f.check_box :private %></div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :value => "Okay, I'm done with this »", :id => "submit" %>
   </div>
+  <br><br>
 <% end %>

@@ -3,10 +3,10 @@ class CreateUpdates < ActiveRecord::Migration
     create_table :updates do |t|
       t.string :name
       t.string :action
-      t.datetime :date
+      t.date :date
       t.boolean :private
       t.string :link
-
+      t.string :item
       t.timestamps
     end
   end

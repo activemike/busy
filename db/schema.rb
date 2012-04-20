@@ -33,9 +33,10 @@ ActiveRecord::Schema.define(:version => 20120420185028) do
   create_table "updates", :force => true do |t|
     t.string   "name"
     t.string   "action"
-    t.datetime "date"
+    t.date     "date"
     t.boolean  "private"
     t.string   "link"
+    t.string   "item"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

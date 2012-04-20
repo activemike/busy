@@ -6,19 +6,23 @@
     <div>When?</div>
     <div>By whom?</div>
   </div>
-    <% @activities.each do |activity| %>
-      <div class="what">
-        <%= activity.description %>
-      </div>
-      <div>
-        <%= activity.performed_by %>
-      </div>
-      <div class="details">
-        <div class="when">
-          <%= activity.date %>
+  <h4>what are your friends up to?</h4>
+  <div id="feed">
+    <% unless @updates.empty? %>
+      <% @updates.each do |update| %>
+        <div class="feed-item">
+          <div class="body">
+            <div><%= update.name %> <%= update.action %> <%= link_to(update.item, update.link) %> <%= time_ago_in_words(update.date) %> ago.</div>
+            <div class="details">
+              <%= link_to 'More Details', update %>
+            </div>
+          </div>
+          <div class="delete">
+            <%= link_to 'x', update, :confirm => 'Are you sure?', :method => :delete %>
+          </div>
+          <br class="clear">
         </div>
-        <div><%= link_to 'More Details', activity %></div>
-        <div><%= link_to 'Delete', activity, :confirm => 'Are you sure?', :method => :delete %></div>
-      </div>
+      <% end %>
     <% end %>
+  </div>
 </div>
