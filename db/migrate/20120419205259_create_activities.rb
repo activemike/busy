@@ -4,7 +4,7 @@ class CreateActivities < ActiveRecord::Migration
       t.string :description
       t.date :date
       t.boolean :private
-
+      t.string :performed_by
       t.timestamps
     end
   end

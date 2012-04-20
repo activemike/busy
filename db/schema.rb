@@ -16,8 +16,9 @@ ActiveRecord::Schema.define(:version => 20120419205259) do
     t.string   "description"
     t.date     "date"
     t.boolean  "private"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.string   "performed_by"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
   create_table "tasks", :force => true do |t|
